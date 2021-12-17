@@ -14,37 +14,46 @@
 	  	    	<div class="title"></div>
 	  	    </div> 
 	  		<div class="chat_content">
-	  				<ul> 
-	  					<li class="teacher_msg">
-						  <div class="user-avatar"> <img src="https://fs-km.7moor.com/N00000021451/km/2018-08-30/1535629155660/52cdcfd0-ac49-11e8-b46c-47849b41fd55?imageView2/1/w/50/h/50" alt=""> </div>
-						  <li class="student_msg">
-								<div >
-									42323432324
-								</div>
-							</li>
-	  				
-	  					</li>
-	  					<li class="student_msg">
-							<div class="user-avatar"> <img src="https://fs-km.7moor.com/N00000021451/km/2018-08-30/1535629155660/52cdcfd0-ac49-11e8-b46c-47849b41fd55?imageView2/1/w/50/h/50" alt=""> </div>
-							<div >
-	  							42323432324
-	  						</div>
-	  					</li>
-	  				</ul>
-	  		</div>
-	  		<div class="chat_info">
-<!--	  			 <div class="chat_tool"></div>-->
-	  			 <div class="chat_input">
-	  			 		<textarea  type="text" name="message">
-	  			 			
-	  			 		</textarea>
-	  			 </div>	
-	  			 <div class="send">
-	  			 	 <button id="send_button">发送</button>
-	  			 </div>
-	  		</div>
-	  </div>
+	  			 <div class="content_center">
+					 <ul class="conversation">
+						 <li class="chat_msg">
+							 <div class="user-avatar"> <img src="https://fs-km.7moor.com/N00000021451/km/2018-08-30/1535629155660/52cdcfd0-ac49-11e8-b46c-47849b41fd55?imageView2/1/w/50/h/50" alt=""> </div>
+							 <p class="service-name"> 好口碑IT教育 <span class="agentMsgTime"></span>   </p>
+							 <div class="outer-left">  <div class="service">       <!-- 默认文字消息 --> 您已经很长时间没有发送消息了，再过3分钟系统将自动断开会话     </div>  </div>
+						 </li>
 
+
+					     <li class="chat_msg " >  <p class="customerMsgTime">22:56:49</p>    <div class="outer-right">  <div class="customer">     <span class="m7msgStatus m7read ">未读</span>   sda     </div>  </div>   </li>
+					 </ul>
+				 </div>
+
+				<div class="footer" >
+					<div class="msg-input">
+						<div class="input-box">
+							<textarea id="chatbox_input" maxlength="1000" class="text grey" data-i18n="saySomething"  style="background-color: rgb(255, 255, 255); color: rgb(153, 153, 153);">说点什么吧...</textarea>
+						</div>
+					</div>
+						<div class="msg-toolbar-footer grey12">
+							<div class="qimo_dav_scrollX" id="qimoScrollX">
+								<div class="qimo"><div id="oldScrollX">
+									<ul></ul></div><div id="newScrollX"></div>
+								</div>
+							</div>
+							<div class="qimo_dav_scrollY" id="newScrollY"></div>
+							<span>
+								<input type="button" data-i18n="submit" value="发送" id="chatmsg_submit" class="m7_do_action" m7_action="submitChatMsg" style="background-color: rgb(33, 110, 244);">
+							</span>
+						</div>
+					<div class="end-session-box pc-session" style="display: none">
+						<div id="continue-advisory-btn" class="m7_do_action" m7_action="continueAdvisoryBtn"><img src="https://webchat.7moor.com/images/continue-advisory.png" width="44px" height="44px">
+							<span data-i18n="continueChat">继续咨询</span>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
 	  </body>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript">
